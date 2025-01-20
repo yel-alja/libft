@@ -6,7 +6,7 @@
 /*   By: yel-alja <yel-alja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 21:41:29 by yel-alja          #+#    #+#             */
-/*   Updated: 2024/10/30 14:44:29 by yel-alja         ###   ########.fr       */
+/*   Updated: 2025/01/20 20:23:23 by yel-alja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+typedef	struct	s_list
+{
+	void			*content;
+	struct s_list	*next;
+}				t_list;
 
 int		ft_atoi(const char *str);
 int		ft_isalnum(int c);
